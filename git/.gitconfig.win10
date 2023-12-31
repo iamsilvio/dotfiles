@@ -1,16 +1,34 @@
-[init]
-	defaultBranch = main
+[core]
+	autocrlf = true
+  excludesfile = ~/.gitignore
+	commentChar = ';'
+	sshCommand = 'C:\\Program Files\\OpenSSH\\ssh.exe'
+
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+
 [user]
 	email = silvio@deleteonerror.com
 	name = silvio
 	signingKey = 7031EC8708724C13
+
+[http]
+  sslbackend = schannel
+
 [commit]
 	gpgsign = true
+
 [log]
 	showSignature = true
+
 [push]
 	default = current
+
 [pull]
 	ff = only
+
+[init]
+	defaultBranch = main
+
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d %Creset %s %Cgreen(%cr) %C(bold blue)<%an %G?>%Creset' --abbrev-commit
