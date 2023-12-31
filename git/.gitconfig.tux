@@ -1,0 +1,12 @@
+[init]
+	defaultBranch = main
+[user]
+	email = silvio@deleteonerror.com
+	name = silvio
+	signingKey = 7031EC8708724C13
+[commit]
+	gpgsign = true
+[log]
+	showSignature = true
+[push]
+	default = current
